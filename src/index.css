@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+	padding: 36px;
+}
+.Nav {
+	display: flex;
+	align-items: center;
+	padding: 20px 30px;
+	background: linear-gradient(90deg, #672280 1.18%, #672280 100%);
+	padding: 20px;
+	color: rgb(252, 252, 252);
+	margin-bottom: 40px;
+}
+.nav--img {
+	height: 100%;
+	width: 40px;
+	margin-right: 6px;
+	border-radius: 10px;
+}
+.nav--tittle {
+	margin-right: auto;
+	font-size: 1.25rem;
+}
+.nav--project {
+	font-size: o.75rem;
+	font-weight: 500;
+}
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 40px 40px;
+	gap: 17px;
+	font-family: sans-serif;
+}
+.form--inputs {
+	border-radius: 5px;
+	border: 1px solid #d5d4d8;
+	text-indent: 10px;
+}
+.form--button {
+	grid-column: 1/ -1;
+	background-color: #672280;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
 }
